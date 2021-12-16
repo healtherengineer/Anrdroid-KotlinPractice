@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+
+
+
+
+    >
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frcontainer"
+        android:name="com.egebarisan.fragments.fr1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="168dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bir" />
+
+            <Button
+                android:id="@+id/iki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="iki" />
+
+            <Button
+                android:id="@+id/uc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Üç" />
+
+            <Button
+                android:id="@+id/acilis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AÇILIŞ" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

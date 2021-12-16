@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/toastButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="sendToast"
+        android:text="Toast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <Button
+        android:id="@+id/speacialToast"
+        android:layout_width="146dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:onClick="sendSpecialToast"
+        android:text="Speacial Toast"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toastButton"
+        app:layout_constraintVertical_bias="0.752" />
+
+    <Button
+        android:id="@+id/snackBar"
+        android:layout_width="120dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="146dp"
+        android:onClick="sendSnackBar"
+        android:text="Snack"
+        app:layout_constraintBottom_toTopOf="@+id/speacialToast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toastButton"
+        app:layout_constraintVertical_bias="0.824" />
+
+    <Button
+        android:id="@+id/AlertButton"
+        android:layout_width="185dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="sendAlertDialog"
+        android:text="Yalnız Yaşa"
+        app:layout_constraintBottom_toTopOf="@+id/snackBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/snackBar"
+        app:layout_constraintTop_toBottomOf="@+id/toastButton"
+        app:layout_constraintVertical_bias="0.62" />
+</androidx.constraintlayout.widget.ConstraintLayout>
