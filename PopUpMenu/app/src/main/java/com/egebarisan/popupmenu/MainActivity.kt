@@ -8,10 +8,11 @@ import android.widget.PopupMenu
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+    var button = findViewById<Button>(R.id.popUpButton)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var button = findViewById<Button>(R.id.popUpButton)
 
     }
     //Notes :
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 //    daha sonrasında popup menu müzdeki itemların id leriyle yapmak istediklerimizi yazıyoruz
 
     fun showPopUp(view: View) {
-        var button = findViewById<Button>(R.id.popUpButton)
+      //  var button = findViewById<Button>(R.id.popUpButton)
         val popupMenu = PopupMenu(this@MainActivity, button)
         //Burası çok önemli
         popupMenu.menuInflater.inflate(R.menu.popup_menu, popupMenu.menu)

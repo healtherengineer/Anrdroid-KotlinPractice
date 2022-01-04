@@ -11,7 +11,7 @@
         android:layout_width="117dp"
         android:layout_height="83dp"
         android:onClick="showPopUp"
-        android:text="Button"
+        android:text="@string/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.255"

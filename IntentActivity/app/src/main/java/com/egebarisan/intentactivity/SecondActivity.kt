@@ -19,6 +19,7 @@ class SecondActivity : AppCompatActivity() {
 
         if (word != null)
         {
+            textView.setText(word)
             Toast.makeText(applicationContext,word,Toast.LENGTH_LONG).show()
 
         }
@@ -29,6 +30,8 @@ class SecondActivity : AppCompatActivity() {
 
 
         backButton.setOnClickListener(){
+
+            textView.setText("MainActivity'e dönülüyor ...")
 
             intent = Intent(this,MainActivity::class.java)
             startActivity(intent)

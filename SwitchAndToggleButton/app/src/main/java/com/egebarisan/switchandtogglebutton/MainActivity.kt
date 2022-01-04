@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             {
                 Toast.makeText(applicationContext , "Swich kapalı" , Toast.LENGTH_LONG).show()
             }
-
+        }
             toggle.setOnCheckedChangeListener{ buttonView , ischecked->
                 if (ischecked)
                 {
@@ -34,6 +34,6 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext , "Toggle Button is NonActive" , Toast.LENGTH_LONG).show()
                 }
             }
-        }
+
     }
 }
